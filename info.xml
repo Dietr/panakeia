@@ -47,45 +47,5 @@
 			</format>
 		</template>
 
-		<template label="Contact" path="core/layout/templates/contact.tpl">
-			<positions>
-				<position name="top" />
-				<position name="main" />
-				<position name="search" />
-				<position name="leftfooter" />
-				<position name="rightfooter" />
-				<position name="social" />
-			</positions>
-			<format>
-				[/,/,/,/],[main,main,main,main],[/,search,search,/],[leftfooter,leftfooter,rightfooter,social]
-			</format>
-		</template>
-
-		<template label="Blog" path="core/layout/templates/blog.tpl">
-			<positions>
-				<position name="main" />
-				<position name="search" />
-				<position name="leftfooter" />
-				<position name="rightfooter" />
-				<position name="social" />
-			</positions>
-			<format>
-				[/,/,/,/],[main,main,main,main],[/,search,search,/],[leftfooter,leftfooter,rightfooter,social]
-			</format>
-		</template>
-
-		<template label="404" path="core/layout/templates/404.tpl">
-			<positions>
-				<position name="main" />
-				<position name="search" />
-				<position name="leftfooter" />
-				<position name="rightfooter" />
-				<position name="social" />
-			</positions>
-			<format>
-				[/,/,/,/],[main,main,main,main],[/,search,search,/],[leftfooter,leftfooter,rightfooter,social]
-			</format>
-		</template>
-
 	</templates>
 </theme>
