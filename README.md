@@ -1,4 +1,0 @@
-panakeia
-========
-
-Fork theme
