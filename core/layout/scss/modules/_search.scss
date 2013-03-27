@@ -1,0 +1,46 @@
+// --------------------------------------
+// Search
+// --------------------------------------
+.search {
+  @include margin-tb(2,0.5);
+  text-align: center;
+  input[type="text"] {
+    width: 70%;
+    @include adjust-fontsize(16, 18);
+    font-family: $sans;
+    font-style: italic;
+    color: $darkcolor;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid scale-lightness($mediumcolor, 30%);
+    background-color: $primarycolor--lightest;
+    outline: none;
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $mediumcolor;
+    }
+  }
+  input[type="submit"] {
+    @extend .btn;
+    @extend .btnSearch;
+  }
+  input[type="autocomplete"] {
+    background-color: black;
+  }
+}
+
+.searchAgain {
+  @extend .search;
+  @include margin-tb(1,3);
+}
+
+.searchResult {
+  display: block;
+  @include padding-lr(1);
+  h1 {
+    @include margin-top(0.5);
+  }
+  p {
+    @include margin-bottom(1.3);
+  }
+}

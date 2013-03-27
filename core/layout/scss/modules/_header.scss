@@ -1,0 +1,71 @@
+// --------------------------------------
+// Chromeframe
+// --------------------------------------
+.chromeframe {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 24px;
+  display: block;
+}
+
+// --------------------------------------
+// Navigation
+// --------------------------------------
+.header {
+  position: relative;
+  z-index: 9999;
+  text-align: center;
+  @include background-opacity($whitecolor, 0.9);
+  border-bottom: 1px solid lighten($mediumcolor,35%);
+  @include breakpoint(lap) {
+    position: fixed;
+  }
+}
+
+.mainNav {
+  @include transition(max-height 0.3s ease-in-out);
+  ul {
+    @include clearfix;
+    margin-bottom: 0;
+  }
+  li {
+    list-style: none;
+    font-style: normal;
+    margin-bottom: 0;
+    &:before {
+      content:"";
+    }
+  }
+  a {
+    @extend .btn;
+    @extend .navBtn;
+  }
+}
+
+.js .mainNav[role=navigation] {
+  overflow: hidden;
+  max-height: 0;
+  @include breakpoint(lap) {
+    max-height: none;
+  }
+}
+
+.toggleMainNav {
+  @extend .btn;
+  @extend .toggleBtn;
+  @include breakpoint(lap) {
+    display: none;
+  }
+}
+
+.mainNav[role=navigation].isExpanded {
+  max-height: 30em;
+}
+
+.mainNav[role=navigation]  li {
+  @include breakpoint(lap) {
+    @include inline-block;
+  }
+}
+

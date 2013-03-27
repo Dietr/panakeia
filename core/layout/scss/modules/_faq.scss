@@ -1,0 +1,62 @@
+// --------------------------------------
+// Faq
+// --------------------------------------
+.faq {
+  @include padding(1,1,0,1);
+  h2 {
+    color: $darkcolor;
+    padding-top: 0;
+  }
+  &:hover, &:focus {
+    a h2 {
+      color: $primarycolor;
+    }
+  }
+}
+
+.faqList {
+  a {
+    @extend .textlink;
+    @extend .textlinkBorder;
+  }
+  margin-bottom: 0;
+  li {
+    font-family: $sans;
+    font-style: normal;
+    border-bottom: 1px solid $lightcolor;
+    @include padding-bottom(0.5);
+    &:last-child {
+      border-bottom: none;
+    }
+    &:before {
+      content: none;
+    }
+  }
+}
+
+.faqCategories {
+  @include padding(1,1,0,1);
+  h2 {
+    color: $darkcolor;
+    padding-top: 0;
+  }
+  &:hover, &:focus {
+    a h2 {
+      color: $primarycolor;
+    }
+  }
+}
+
+.faqCategory {
+  font-family: $sans;
+  font-style: normal;
+  li {
+    &:before {
+      content: none;
+   }
+  }
+  a {
+    @extend .textlink;
+    @extend .textlinkBorder;
+  }
+}

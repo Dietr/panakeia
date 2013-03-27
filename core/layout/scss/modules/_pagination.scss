@@ -1,0 +1,53 @@
+// --------------------------------------
+// Page and bottom navigation
+// --------------------------------------
+.pagenumbers, .more {
+  text-align: center;
+  li {
+    list-style: none;
+    display: inline;
+    font-style: normal;
+    &:before {
+      content: "";
+    }
+  }
+  a {
+    @extend .btn;
+  }
+}
+
+.pagenumbers {
+  @include margin-tb(0.5,1.5);
+  li {
+    @include margin-lr(0.1, 0.1);
+  }
+  a {
+    @extend .btnNumber;
+  }
+  span {
+    @extend .btn;
+    @extend .btnNumberInactive;
+  }
+}
+
+.more {
+  @include margin-tb(1,1.5);
+  a {
+    @extend .btnMore;
+  }
+}
+
+.pageNavigation {
+  text-align: center;
+  @include clearfix;
+  @extend .row;
+  @include margin-bottom(1.5);
+  span {
+    font-weight: 700;
+  }
+  a {
+    display: block;
+    @extend .btnPage;
+    font-family: $sans;
+  }
+}

@@ -1,0 +1,105 @@
+// --------------------------------------
+// Setup
+// --------------------------------------
+.container {
+  width: 100%;
+  overflow-x: hidden;
+  @include clearfix;
+}
+
+.mainContent {
+  padding: $base*6 0;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  @include breakpoint(lap) {
+    padding: $base*6 $base*4;
+  }
+}
+
+// --------------------------------------
+// Grid positions
+// --------------------------------------
+.row {
+  @include row(12);
+}
+
+.full {
+  @include column(12);
+}
+
+.centered {
+  @include column(12);
+  @include breakpoint(lap) {
+    @include column(10);
+    @include push(1);
+  }
+  @include breakpoint(desk) {
+    @include column(8);
+    @include push(2);
+  }
+}
+
+.indent {
+  @include column(10);
+  @include push(1);
+  @include breakpoint(lap) {
+    @include column(6);
+    @include push(3);
+  }
+}
+
+.block {
+  @include column(12);
+  @include breakpoint(lap) {
+    @include column(6);
+  }
+  @include breakpoint(desk) {
+    @include column(4);
+  }
+}
+
+.half {
+  @include column(12);
+  @include breakpoint(lap) {
+    @include column(6);
+  }
+}
+
+.dominant {
+  @include column(12);
+  @include breakpoint(lap) {
+    @include column(6);
+  }
+}
+
+.secondary {
+  @include column(12);
+  @include breakpoint(lap) {
+    @include column(4);
+  }
+}
+
+.tertiary {
+  @include column(12);
+  @include breakpoint(lap) {
+    @include column(2);
+  }
+}
+
+.left {
+  float: none;
+  text-align: center;
+  @include breakpoint(lap) {
+    float: left;;
+  }
+}
+
+.right {
+  float: none;
+  text-align: center;
+  @include breakpoint(lap) {
+    float: right;;
+  }
+}
+

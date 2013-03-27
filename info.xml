@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<name>panakeia</name>
+	<version>1.0.0</version>
+	<requirements>
+		<minimum_version>3.0.0</minimum_version>
+	</requirements>
+	<thumbnail>thumbnail.png</thumbnail>
+	<description>
+		<![CDATA[
+			In Greek mythology, Panacea (Greek Πανάκεια, Panakeia) was a goddess of Universal remedy. She was said to have a poultice or potion with which she healed the sick, a substance meant to cure all diseases.
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name>Dieter Peirs</name>
+			<url>http://www.dieterpeirs.com</url>
+		</author>
+	</authors>
+	<metanavigation supported="false" />
+	<templates>
+
+		<template label="Default" path="core/layout/templates/default.tpl">
+			<positions>
+				<position name="main" />
+				<position name="search" />
+				<position name="leftfooter" />
+				<position name="rightfooter" />
+				<position name="social" />
+			</positions>
+			<format>
+				[/,/,/,/],[main,main,main,main],[/,search,search,/],[leftfooter,leftfooter,rightfooter,social]
+			</format>
+		</template>
+
+		<template label="Home" path="core/layout/templates/home.tpl">
+			<positions>
+				<position name="top" />
+				<position name="main" />
+				<position name="search" />
+				<position name="leftfooter" />
+				<position name="rightfooter" />
+				<position name="social" />
+			</positions>
+			<format>
+				[/,top,top,/],[main,main,main,main],[/,search,search,/],[leftfooter,leftfooter,rightfooter,social]
+			</format>
+		</template>
+
+		<template label="Contact" path="core/layout/templates/contact.tpl">
+			<positions>
+				<position name="top" />
+				<position name="main" />
+				<position name="search" />
+				<position name="leftfooter" />
+				<position name="rightfooter" />
+				<position name="social" />
+			</positions>
+			<format>
+				[/,/,/,/],[main,main,main,main],[/,search,search,/],[leftfooter,leftfooter,rightfooter,social]
+			</format>
+		</template>
+
+		<template label="Blog" path="core/layout/templates/blog.tpl">
+			<positions>
+				<position name="main" />
+				<position name="search" />
+				<position name="leftfooter" />
+				<position name="rightfooter" />
+				<position name="social" />
+			</positions>
+			<format>
+				[/,/,/,/],[main,main,main,main],[/,search,search,/],[leftfooter,leftfooter,rightfooter,social]
+			</format>
+		</template>
+
+		<template label="404" path="core/layout/templates/404.tpl">
+			<positions>
+				<position name="main" />
+				<position name="search" />
+				<position name="leftfooter" />
+				<position name="rightfooter" />
+				<position name="social" />
+			</positions>
+			<format>
+				[/,/,/,/],[main,main,main,main],[/,search,search,/],[leftfooter,leftfooter,rightfooter,social]
+			</format>
+		</template>
+
+	</templates>
+</theme>

@@ -1,0 +1,18 @@
+.sitemap {
+  ul {
+    font-weight: 700;
+    ul {
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+  a {
+    font-family: $sans;
+    font-style: normal;
+    @extend .textlink;
+    @extend .textlinkBorder;
+  }
+  li:before {
+    color: $primarycolor;
+  }
+}

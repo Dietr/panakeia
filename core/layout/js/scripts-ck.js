@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".content a > img").parent().addClass("linkedImage");$("iframe").each(function(){var e=$(this).attr("src"),t="?";e.indexOf("?")!=-1&&(t="&");$(this).attr("src",e+t+"wmode=transparent")});$("body").addClass("js");var e=$("#navigation"),t=$(".toggleMainNav");t.click(function(){t.toggleClass("isExpanded");e.toggleClass("isExpanded");return!1})});

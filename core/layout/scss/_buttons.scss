@@ -1,0 +1,182 @@
+// --------------------------------------
+// Links
+// --------------------------------------
+.textlink, .textlink a {
+  color: $primarycolor;
+  &:visited {
+    color: $primarycolor;
+  }
+  &:hover, &:focus {
+    color: $primarycolor--dark;
+  }
+}
+
+.textlinkBorder, .textlinkBorder a {
+  &:hover, &:focus {
+    border-bottom: 1px dotted $primarycolor--light;
+  }
+}
+
+.meta {
+  display: inline;
+  color: $mediumcolor;
+}
+
+.category, .category a {
+  font-family: $sans;
+  color: $mediumcolor;
+  @include margin-bottom(1);
+  &:visited {
+    color: $mediumcolor;
+  }
+  &:hover, &:focus {
+    color: $darkcolor;
+    border-bottom: 1px dotted $mediumcolor;
+  }
+}
+
+// --------------------------------------
+// Buttons
+// --------------------------------------
+.btn {
+  font-family: $sans;
+  @include padding-lr(0.5,0.5);
+}
+
+.navBtn {
+  display: block;
+  @include adjust-fontsize(16, 18);
+  color: $mediumcolor;
+  @include padding-tb(0.5,0.5);
+  border-top: 1px solid $lightestcolor;
+  @include breakpoint(lap) {
+    border: none;
+    @include margin-lr(0.1,0.1);
+  }
+  &:visited {
+    color: $mediumcolor;
+  }
+  &:hover, &:focus {
+    color: $primarycolor;
+  }
+  .selected & {
+    color: $primarycolor;
+    font-weight: 700;
+  }
+}
+
+.toggleBtn {
+  display: block;
+  @include adjust-fontsize(16, 18);
+  color: $primarycolor;
+  font-weight: 700;
+  @include padding-tb(0.7,0.55);
+  &:visited {
+    color: $mediumcolor;
+  }
+  &:hover, &:focus {
+    color: $primarycolor;
+  }
+}
+
+.categoryBtn {
+  padding: $base/2 $base;
+  margin: 2px;
+  border-radius: $base/2;
+  background-color: scale-lightness($primarycolor, -5%);
+  display: inline;
+  color: $primarycolor--light;
+  @include transition(background-color 0.3s ease-in-out);
+  &:hover, &:focus {
+    color: $whitecolor;
+    background-color: scale-lightness($primarycolor, -5%);
+  }
+  .isActive & {
+    font-weight: 700;
+    color: $primarycolor--lightest;
+    background-color: scale-lightness($primarycolor, -8%);
+  }
+}
+
+.btnMore {
+  @include adjust-fontsize(16, 21);
+  @include padding(0.5, 0.5, 0.5, 0.5);
+  color: $whitecolor;
+  background-color: $primarycolor;
+  @include transition(background-color 0.3s ease-in-out);
+  &:hover, &:focus {
+    color: $primarycolor--lightest;
+    background-color: scale-saturation(darken($primarycolor, 5%), -10%);
+  }
+}
+
+.btnNumber {
+  @include adjust-fontsize(16, 18);
+  @include padding(0.5, 0.5, 0.5, 0.5);
+  color: $whitecolor;
+  background-color: $primarycolor;
+  @include transition(background-color 0.3s ease-in-out);
+  &:hover, &:focus {
+    color: $primarycolor--lightest;
+    background-color: scale-saturation(darken($primarycolor, 5%), -10%);
+  }
+}
+
+.btnNumberInactive {
+  cursor: default;
+  @include adjust-fontsize(16, 18);
+  @include padding(0.5, 0.5, 0.5, 0.5);
+  color: $primarycolor;
+  background-color: $whitecolor;
+  @include transition(background-color 0.3s ease-in-out);
+}
+
+.btnPage {
+  @include padding(1,0.2,1,0.2);
+  color: $mediumcolor;
+  @include adjust-fontsize(16, 18);
+  background-color: $whitecolor;
+  @include transition(box-shadow 0.3s ease-in-out);
+  &:hover, &:focus {
+    color: $primarycolor;
+    @include box-shadow(0px 0px 18px scale-lightness($mediumcolor, 70%));
+  }
+}
+
+.btnSearch {
+  cursor: pointer;
+  @include adjust-fontsize(16, 18);
+  @include padding(0.5, 0.5, 0.5, 0.5);
+  color: $mediumcolor;
+  border: none;
+  background-color: $primarycolor--lightest;
+  &:hover, &:focus {
+    color: darken($mediumcolor, 20%);
+  }
+}
+
+.btnSubmit {
+  font-size: 18px;
+  @include padding(0.5, 0.5, 0.5, 0.5);
+  color: $primarycolor;
+  border: none;
+  border-radius: 0;
+  background-color: $whitecolor;
+  &:hover, &:focus {
+    color: $primarycolor--dark;
+  }
+}
+
+.btnSubmitNeg {
+  font-size: 18px;
+  @include padding(0.5, 0.5, 0.5, 0.5);
+  color: $whitecolor;
+  border: none;
+  border-radius: 0;
+  background-color: $primarycolor;
+  &:hover, &:focus {
+    color: $primarycolor--lightest;
+    background-color: $primarycolor--dark;
+  }
+}
+

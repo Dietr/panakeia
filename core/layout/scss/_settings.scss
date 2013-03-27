@@ -1,0 +1,67 @@
+// ----------------------------
+// Settings and variables
+// ----------------------------
+
+// Base unit
+// ----------------------------
+$base                           : 6px;
+
+// Typography
+
+$serif                         : "DroidSerif", georgia, serif;
+$sans                          : "PTSans", arial, sans-serif;
+$basefont                      : $serif;
+$basefontsize                  : 16;
+$importantnumber               : 30;
+$basefontweight                : 400;
+$baselineheight                : 1.5;
+$baseheadingfont               : $sans;
+$baseheadingfontweight         : 700;
+
+// Breakpoints calculated in em's
+// ----------------------------
+$bp1                           : #{320 / $basefontsize}em;
+$bp2                           : #{480 / $basefontsize}em;
+$bp3                           : #{780 / $basefontsize}em;
+$bp4                           : #{1024 / $basefontsize}em;
+
+$palm                          : 30em;
+$lap                           : 48.75em;
+$desk                          : 64em;
+
+// Modular scale settings
+// ----------------------------
+// $ratio: 1.5;
+// $base-size: $basefontsize/16*1em $importantnumber/16*1em;
+
+// Roundness
+// ----------------------------
+$radius                        : 3px;
+
+
+// Theme colors
+// ----------------------------
+$red                           : #ff5c51;
+$cold                          : #172533;
+$warm                          : #322e21;
+
+// Helping colors
+// ----------------------------
+$whitecolor                    : #fff;
+$darkcolor                     : #4b4b53;
+$mediumcolor                   : scale-lightness($darkcolor, 40%);
+$lightcolor                    : scale-lightness($darkcolor, 90%);
+$lightestcolor                 : scale-lightness($darkcolor, 95%);
+
+$primarycolor                  : $red;
+$primarycolor--dark            : scale-saturation(darken($primarycolor, 10%), -20%);
+$primarycolor--light           : scale-lightness($primarycolor, 70%);;
+$primarycolor--lightest        : scale-saturation(scale-lightness($primarycolor, 85%), -85%);
+$secondarycolor                : $darkcolor;
+
+// Links
+// ----------------------------
+$linkcolor                     : $primarycolor;
+$linkcolorhover                : darken($linkcolor, 10);
+$linkcolorfocus                : darken($linkcolor, 10);
+$linkcolorvisited              : darken($linkcolor, 5);

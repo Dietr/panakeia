@@ -1,0 +1,145 @@
+// --------------------------------------
+// Form fields
+// --------------------------------------
+
+input, // added general input for wider scope
+input.inputText,
+input.inputPassword,
+input.inputSearch,
+input.inputDate,
+textarea {
+	@include border-box;
+	-webkit-appearance: none;
+
+	&:focus {
+		outline: thin dotted;
+		outline-color: inherit;
+		border-color: inherit;
+	}
+}
+
+// --------------------------------------
+// Form buttons
+// --------------------------------------
+
+button,
+.button,
+a.button {
+	@include border-box;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+// --------------------------------------
+// Comment styles
+// --------------------------------------
+  input.inputText, textarea  {
+    font-size: 16px;
+    width: 100%;
+    font-family: $sans;
+    color: $darkcolor;
+    border: none;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px solid $lightestcolor;
+    padding: $base;
+    outline: none;
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $lightcolor;
+    }
+    &::-webkit-input-placeholder {
+      font-style: italic;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      font-style: italic;
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+      font-style: italic;
+    }
+    &:-ms-input-placeholder {
+      font-style: italic;
+    }
+  }
+
+.inputSubmit {
+  @extend .btn;
+  @extend .btnSubmit;
+  cursor: pointer;
+}
+
+.comments, .commentsForm {
+  @include margin-top(1.5);
+  @include padding(1,1,1,1);
+}
+
+.commentsForm {
+  @include margin-bottom(1);
+  p {
+    @include margin-bottom(0.6);
+  }
+  label {
+    @include adjust-fontsize(16,14);
+    font-family: $sans;
+   }
+}
+
+.errorArea, .message {
+  text-indent: 1px;
+  font-family: $sans;
+  color: $primarycolor--light;
+  label {
+    font-weight: bold;
+  }
+  & input {
+    border: 3px solid $primarycolor--dark;
+  }
+  span {
+    font-style: italic;
+    padding-left: 1px;
+    @include adjust-fontsize(16,14);
+  }
+}
+
+// --------------------------------------
+// Contact styles
+// --------------------------------------
+.contactForm {
+  @include padding(1,1,1,1);
+  abbr {
+    color: $primarycolor;
+     border-bottom: none;
+  }
+  input,  textarea{
+    background-color: $lightestcolor;
+  }
+  p {
+    font-family: $sans;
+    @include margin-bottom(0.6);
+  }
+  label {
+    display: block;
+    @include adjust-fontsize(16,14);
+   }
+  .inputSubmit {
+    @extend .btn;
+    @extend .btnSubmitNeg;
+  }
+  .errorArea, .message {
+    color: $primarycolor;
+    p {
+      color: $primarycolor;
+    }
+    label {
+      font-weight: bold;
+    }
+    & input {
+      border: 3px solid $primarycolor;
+    }
+  }
+}
+
+

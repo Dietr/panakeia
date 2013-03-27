@@ -1,0 +1,12 @@
+// Contact
+.contactForm {
+    abbr {
+      color: $primarycolor;
+      border-bottom: none;
+  }
+  input[type="text"],  textarea{
+    background-color: $lightestcolor;
+  }
+}
+
+

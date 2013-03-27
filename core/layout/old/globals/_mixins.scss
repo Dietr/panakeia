@@ -1,0 +1,67 @@
+// --------------------------------------
+// @include font-size(18px, 30px);
+// --------------------------------------
+@mixin font-size($font-size: $base-font-size, $line-height: $base-line-height) {
+    font-size: $font-size; //42
+    font-size: ($font-size / $base-font-size) * 1em;
+    line-height: ($line-height / $font-size) * 1em;
+}
+
+// --------------------------------------
+// @include space(5);
+// --------------------------------------
+@mixin space($multiplier:5) {
+    margin-top: ($multiplier * $base)/$base-font-size * 1rem;
+    margin-bottom: ($multiplier * $base)/$base-font-size * 1rem;
+}
+
+// --------------------------------------
+// @include space-after(5);
+// --------------------------------------
+@mixin space-after($multiplier:5) {
+    margin-bottom: ($multiplier * $base)/$base-font-size * 1rem;
+}
+
+// --------------------------------------
+// @include space-before(5);
+// --------------------------------------
+@mixin space-before($multiplier:5) {
+    margin-top: ($multiplier * $base)/$base-font-size * 1rem;
+}
+
+// --------------------------------------
+// @include filling(5);
+// --------------------------------------
+@mixin filling($multiplier:5) {
+    padding-top: ($multiplier * $base)/$base-font-size * 1rem;
+    padding-bottom: ($multiplier * $base)/$base-font-size * 1rem;
+}
+
+// --------------------------------------
+// @include filling-before(5);
+// --------------------------------------
+@mixin filling-before($multiplier:5) {
+    padding-top: ($multiplier * $base)/$base-font-size * 1rem;
+}
+
+// --------------------------------------
+// @include filling-after(5);
+// --------------------------------------
+@mixin filling-after($multiplier:5) {
+    padding-bottom: ($multiplier * $base)/$base-font-size * 1rem;
+}
+
+// --------------------------------------
+// @include breakpoint(desk/palm/lap)
+// --------------------------------------
+@mixin breakpoint($point) {
+  @if $point == palm {
+    @media screen and (min-width: $palm) { @content; }
+  }
+  @else if $point == lap {
+    @media screen and (min-width: $lap) { @content; }
+  }
+  @else if $point == desk {
+    @media screen and (min-width: $desk)  { @content; }
+  }
+}
