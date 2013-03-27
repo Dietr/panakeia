@@ -1,29 +1,18 @@
-// --------------------------------------
-// Blog overview (homepage & blog index)
-// --------------------------------------
-.blogIntro {
-  position: relative;
-  top: -0.8em;
-  color: $whitecolor;
-  text-align: center;
-}
-
-.blogIntroDetail {
-  margin-bottom: -3.8em;
-}
-
+// $Summary
 .summary {
-  margin-bottom: $base*4;
-  border: 1px solid $whitecolor;
+  @include padding(1);
+  @include margin-bottom(1);
+  border: 1px solid $primarycolor--lightest;
   background-color: $whitecolor;
-  @include padding-bottom(1);
   @include transition(box-shadow 0.3s ease-in-out);
   h1 {
-    @include transition(color 0.3s ease-in-out);
+    margin-bottom: 0;
+    padding-bottom: 0;
     color: $darkcolor;
+    @include transition(color 0.3s ease-in-out);
   }
   &:hover, &:focus {
-    @include box-shadow(0px 0px 18px scale-lightness($mediumcolor, 50%));
+    @include box-shadow(0px 0px 18px scale-lightness($mediumcolor, 60%));
     h1 {
       color: $primarycolor;
     }
@@ -34,17 +23,7 @@
   display: block;
 }
 
-.articleImageMain {
-  width: 100%;
-}
-
 .summaryContentText {
-  @include padding-lr(1);
-  h1 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    @include margin-top(0.5);
-  }
   @include breakpoint(lap) {
     height: 22em;
     overflow: hidden;
@@ -56,38 +35,17 @@
 }
 
 .summaryFooter {
-  @include padding-lr(1);
   h4.textlink {
     @include padding-bottom(0.5);
     border-bottom: 1px solid $lightcolor;
   }
 }
 
-.date {
-  font-family: $sans;
-  color: $mediumcolor;
-  @include margin-bottom(0.5);
-}
-
-.month, .year {
-  &:before {
-    content: "/";
-    position: relative;
-    left: -2px;
-    bottom: 1px;
-    color: scale-lightness($mediumcolor, 50%);
-  }
-}
-
-
-// --------------------------------------
-// Blog detail
-// --------------------------------------
-
-.articleBlog {
+// $Blogcontent
+.blogDetail {
   background-color: $whitecolor;
   @include margin-bottom(1);
-  @include padding-bottom(2);
+  @include padding(2,1,2,1);
   p:first-child {
     @extend .lead;
   }
@@ -97,7 +55,7 @@
   }
 }
 
-.articleBlogTitle {
+.blogDetailTitle {
   h1 {
     @include margin-bottom(0.2);
   }
@@ -106,26 +64,66 @@
 
 }
 
-// --------------------------------------
-// Blog comments
-// --------------------------------------
-.comments {
-  background-color: $whitecolor;
+.blogDetailImage {
+  width: 100%;
+  @include padding-bottom(2);
 }
 
-.commentsForm {
-  background-color: $primarycolor;
-  h3 {
-    color: $whitecolor;
-    border-bottom: 1px solid scale-lightness($primarycolor, 25%);
+// $Pagenumbers
+.pagenumbers, .more {
+  text-align: center;
+  li {
+    list-style: none;
+    display: inline;
+    font-style: normal;
+    &:before {
+      content: "";
+    }
   }
-  p {
-    color: $primarycolor--lightest;
+  a {
+    @extend .btn;
   }
-  abbr {
-    color: $whitecolor;
-    border-bottom: none;
+}
+
+.pagenumbers {
+  @include margin-tb(0.5,1.5);
+  li {
+    @include margin-lr(0.1, 0.1);
   }
+  a {
+    @extend .btnNumber;
+  }
+  span {
+    @extend .btn;
+    @extend .btnNumberInactive;
+  }
+}
+
+.more {
+  @include margin-tb(1,1.5);
+  a {
+    @extend .btnMore;
+  }
+}
+
+.pageNavigation {
+  text-align: center;
+  @include clearfix;
+  @extend .row;
+  @include margin-bottom(1.5);
+  span {
+    font-weight: 700;
+  }
+  a {
+    display: block;
+    @extend .btnPage;
+    font-family: $sans;
+  }
+}
+
+// $Comments
+.comments {
+  background-color: $whitecolor;
 }
 
 .comment {
@@ -150,4 +148,20 @@
 .commentAuthor {
   font-family: $sans;
   @include adjust-fontsize(16,16);
+}
+
+// $CommentsForm
+.commentsForm {
+  background-color: $primarycolor;
+  h3 {
+    color: $whitecolor;
+    border-bottom: 1px solid scale-lightness($primarycolor, 25%);
+  }
+  p {
+    color: $primarycolor--lightest;
+  }
+  abbr {
+    color: $whitecolor;
+    border-bottom: none;
+  }
 }

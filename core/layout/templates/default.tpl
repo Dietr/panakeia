@@ -3,12 +3,12 @@
 	{include:core/layout/templates/header.tpl}
 
 	<div class="wrapper">
-		<div class="container mainContent">
+		<div class="container frame mainContent">
 
 			<div class="pageTitle">
 				{* Logo *}
-				<h1 class="">
-					<a href="/" class="logo" title="{$pageTitle}"><span class="monogramNeg">{$siteTitle|substring:0:1}</span></a>
+				<h1>
+					<a href="/" title="{$pageTitle}"><span class="monogramNeg">{$siteTitle|substring:0:1}</span></a>
 				</h1>
 			</div>
 

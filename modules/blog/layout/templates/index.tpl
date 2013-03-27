@@ -5,13 +5,7 @@
 
 {option:!items}
 	<div id="blogIndex">
-		<section class="mod">
-			<div class="inner">
-				<div class="bd content">
-					<p>{$msgBlogNoItems}</p>
-				</div>
-			</div>
-		</section>
+		<p>{$msgBlogNoItems}</p>
 	</div>
 {/option:!items}
 
@@ -21,9 +15,6 @@
 		{iteration:items}
 		<article class="block summary">
 			<a href="{$items.full_url}" title="{$items.title}" class="summaryContent">
-				<!-- {option:items.image}
-				<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$items.image}" alt="{$items.image}" class="summaryContentImage">
-				{/option:items.image} -->
 				<header class="summaryContentText">
 					<h1 class="h2">{$items.title|ucfirst}</h1>
 					<p class="date">

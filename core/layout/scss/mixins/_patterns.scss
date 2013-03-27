@@ -1,12 +1,3 @@
-/*
-	Chopstick patterns
-*/
-
-/// Extends
-
-// clearfix
-// use: @extend %clearfix;
-
 %clearfix {
 	*zoom : 1;
 
@@ -21,8 +12,9 @@
 	}
 }
 
-/// Mixins
-
+// ----------------
+// Mixins
+// ----------------
 // horizontal responsive navigation
 // use @include list-nav() / horizontal-nav;
 
@@ -58,9 +50,9 @@
 	zoom: 1;
 }
 
-
-// baseline mixins
-
+// ----------------
+// Baseline mixins
+// ----------------
 // padding based on the base line-height
 // use: @include padding(#top, #right, #bottom, #left);
 
@@ -189,35 +181,15 @@
     @include mdrn-svg { background: $bg-color url($filename + '.svg') $position $repeat; }
 }
 
-// breakpoint mixin
-// --------------------------------------
-// @include breakpoint(desk/palm/lap)
-// --------------------------------------
-// @mixin breakpoint($point) {
-//   @if $point == palm {
-//     @media screen and (min-width: $bp1) { @content; }
-//   }
-//   @else if $point == lap {
-//     @media screen and (min-width: $bp2) { @content; }
-//   }
-//   @else if $point == portable {
-//     @media screen and (min-width: $bp3)  { @content; }
-//   }
-//   @else if $point == desk {
-//     @media screen and (min-width: $bp4)  { @content; }
-//   }
-// }
-
+// ----------------
+// Breakpoint mixin
+// ----------------
 @mixin bp($point) {
   @media screen and (min-width: $point) {
     @content;
   }
 }
 
-
-// --------------------------------------
-// @include breakpoint(desk/palm/lap)
-// --------------------------------------
 @mixin breakpoint($point) {
   @if $point == palm {
     @media screen and (min-width: $palm) { @content; }
@@ -230,9 +202,9 @@
   }
 }
 
-// --------------------------------------
-// @include inline-block (IE6/7 support)
-// --------------------------------------
+// ----------------
+// Inline-block
+// ----------------
 @mixin inline-block {
   display: inline-block;
   vertical-align: baseline;

@@ -1,7 +1,19 @@
-// --------------------------------------
 // Faq
-// --------------------------------------
 .faq {
+  @include padding(1,1,0,1);
+  h2 {
+    color: $darkcolor;
+    padding-top: 0;
+    @include transition(color 0.3s ease-in-out);
+  }
+  &:hover, &:focus {
+    a h2 {
+      color: $primarycolor;
+    }
+  }
+}
+
+.faqCategories {
   @include padding(1,1,0,1);
   h2 {
     color: $darkcolor;
@@ -34,27 +46,12 @@
   }
 }
 
-.faqCategories {
-  @include padding(1,1,0,1);
-  h2 {
-    color: $darkcolor;
-    padding-top: 0;
-  }
-  &:hover, &:focus {
-    a h2 {
-      color: $primarycolor;
-    }
-  }
-}
-
 .faqCategory {
+  @extend .h4;
   font-family: $sans;
   font-style: normal;
-  li {
-    &:before {
-      content: none;
-   }
-  }
+  color: $mediumcolor;
+  @include padding-bottom(1);
   a {
     @extend .textlink;
     @extend .textlinkBorder;

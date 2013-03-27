@@ -12,12 +12,10 @@
 
 {option:widgetSubpages}
 	{iteration:widgetSubpages}
-	<article class="centered summary">
-		<a href="{$widgetSubpages.full_url}" class="summary__content">
-			<div class="summaryContentText">
-				<h2>{$widgetSubpages.title}</h2>
-				<p>{$widgetSubpages.description}</p>
-			</div>
+	<article class="centered summary subpages">
+		<a href="{$widgetSubpages.full_url}">
+			<h2>{$widgetSubpages.title}</h2>
+			<p>{$widgetSubpages.description}</p>
 		</a>
 	</article>
 	{/iteration:widgetSubpages}

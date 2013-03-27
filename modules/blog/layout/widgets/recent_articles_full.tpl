@@ -4,14 +4,11 @@
 *}
 
 {option:widgetBlogRecentArticlesFull}
-	<section id="blogRecentArticlesFullWidget" class="mod">
+	<section id="blogRecentArticlesFullWidget">
 
 		{iteration:widgetBlogRecentArticlesFull}
 		<article class="block summary">
 			<a href="{$widgetBlogRecentArticlesFull.full_url}" title="{$widgetBlogRecentArticlesFull.title}" class="summaryContent">
-				<!-- {option:widgetBlogRecentArticlesFull.image}
-				<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$widgetBlogRecentArticlesFull.image}" alt="placeholder" class="summaryContentImage">
-				{/option:widgetBlogRecentArticlesFull.image} -->
 				<header class="summaryContentText">
 					<h1 class="h2">{$widgetBlogRecentArticlesFull.title|ucfirst}</h1>
 					<p class="date"><!-- {$msgWrittenBy|ucfirst|sprintf:{$widgetBlogRecentArticlesFull.user_id|usersetting:'nickname'}} {$lblOn} -->

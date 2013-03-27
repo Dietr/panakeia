@@ -5,7 +5,6 @@
 // External Frameworks
 
 	@import "compass"; /* http://compass-style.org/install */
-	// @import "modular-scale"; /* https://github.com/scottkellum/modular-scale#installation */
 
 // Mixins
 
@@ -34,9 +33,9 @@
 	@import "modules/main";
 	@import "modules/blog";
 	@import "modules/faq";
-	@import "modules/pagination";
 	@import "modules/search";
-	@import "modules/sitemap";
+	@import "modules/content_blocks";
+	@import "modules/pages";
 
 // Print
 

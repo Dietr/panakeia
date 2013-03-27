@@ -1,6 +1,4 @@
-// --------------------------------------
-// Logo
-// --------------------------------------
+// $Logo
 .monogram {
   display: block;
   width: 120px;
@@ -22,10 +20,6 @@
     position: relative;
     top: -2.4em;
   }
-}
-
-.logotype {
-  color: $whitecolor;
 }
 
 .monogramNeg {
@@ -54,5 +48,27 @@
   }
   &:visited {
     color: $whitecolor;
+  }
+}
+
+.logotype {
+  color: $whitecolor;
+}
+
+// $Time
+.date {
+  @extend .h4;
+  font-family: $sans;
+  color: $mediumcolor;
+  @include margin-bottom(0.5);
+}
+
+.month, .year {
+  &:before {
+    content: "/";
+    position: relative;
+    left: -2px;
+    bottom: 1px;
+    color: scale-lightness($mediumcolor, 50%);
   }
 }

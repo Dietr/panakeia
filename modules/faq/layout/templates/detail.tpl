@@ -6,46 +6,18 @@
 <div id="faqDetail">
 	<article class="full article">
 		<div class="row">
-		<div class="centered articleContent">
-			<header class="hd">
+			<div class="centered articleContent">
 				<h2>{$item.question}</h2>
-                {option:settings.allow_multiple_categories}
-				<ul class="faqCategory">
-					<li>
-						{* Category*}
+				{option:settings.allow_multiple_categories}
+					{* Category*}
+					<p class="faqCategory">
 						{$lblIn|ucfirst} {$lblThe} {$lblCategory} <a href="{$item.category_full_url}" title="{$item.category_title}">{$item.category_title}</a>
-                        {option:!item.tags}{/option:!item.tags}
+					</p>
+        {/option:settings.allow_multiple_categories}
 
-						{* Tags*}
-						{option:item.tags}
-							{$lblWith} {$lblThe} {$lblTags}
-							{iteration:item.tags}
-								<a href="{$item.tags.full_url}" rel="tag" title="{$item.tags.name}">{$item.tags.name}</a>{option:!item.tags.last}, {/option:!item.tags.last}{option:item.tags.last}.{/option:item.tags.last}
-							{/iteration:item.tags}
-						{/option:item.tags}
-					</li>
-				</ul>
-           {/option:settings.allow_multiple_categories}
-
-				{* Tags *}
-                {option:!settings.allow_multiple_categories}
-                    {option:item.tags}
-                    <ul class="faqlist">
-                        <li>
-                            {$lblWith} {$lblThe} {$lblTags}
-                            {iteration:item.tags}
-                                <a href="{$item.tags.full_url}" rel="tag" title="{$item.tags.name}">{$item.tags.name}</a>{option:!item.tags.last}, {/option:!item.tags.last}{option:item.tags.last}.{/option:item.tags.last}
-                            {/iteration:item.tags}
-                        </li>
-                    </ul>
-                    {/option:item.tags}
-                {/option:!settings.allow_multiple_categories}
-			</header>
-			<div class="bd ">
 				{$item.answer}
 			</div>
 		</div>
-	</div>
 	</article>
 
 	{option:inSameCategory}

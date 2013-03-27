@@ -18,13 +18,12 @@
 
 	<div class="wrapper wrapperLong">
 
-		<!-- Blog overview -->
-		<div class="container mainContent">
+		<div class="container frame mainContent">
 			{* Content *}
 			{iteration:positionMain}
 				{option:positionMain.blockIsHTML}
-				<article class="full article">
-					<div class="centered articleContent">
+				<article class="centered article">
+					<div class="articleContent">
 						{$positionMain.blockContent}
 					</div>
 				</article>
@@ -44,7 +43,6 @@
 					{$positionSearch.blockContent}
 				{/option:!positionSearch.blockIsHTML}
 			{/iteration:positionSearch}
-
 		</div>
 
 	{include:core/layout/templates/footer.tpl}
