@@ -1,5 +1,5 @@
 {include:core/layout/templates/head.tpl}
-<body class="{$LANGUAGE}" itemscope itemtype="http://schema.org/WebPage">
+<body class="{$LANGUAGE} neutral" itemscope itemtype="http://schema.org/WebPage">
 	{include:core/layout/templates/header.tpl}
 
 	<div class="wrapper">

@@ -11,7 +11,15 @@
     border: none;
     border-radius: 0;
     border-bottom: 1px solid scale-lightness($mediumcolor, 30%);
-    background-color: $primarycolor--lightest;
+    .warm & {
+      background-color: $warmcolor--lightest;
+    }
+    .cold & {
+      background-color: $coldcolor--lightest;
+    }
+    .neutral & {
+      background-color: $neutralcolor--lightest;
+    }
     outline: none;
     &:focus {
       outline: none;

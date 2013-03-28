@@ -109,7 +109,15 @@ h6,
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $primarycolor;
+	.warm & {
+  	color: $warmcolor;
+  }
+  .cold & {
+  	color: $coldcolor;
+  }
+  .neutral & {
+  	color: $neutralcolor;
+  }
 }
 
 h2, h3 {
@@ -169,6 +177,20 @@ ul li {
 		@include font-dimensions(14);
 		position: absolute;
 		@include left(-0.7);
+		}
+}
+
+ul ul {
+	@include margin-left(0.4);
+}
+
+ul ul li {
+	list-style: none;
+		&:before {
+		content: "-";
+		@include font-dimensions(14);
+		position: absolute;
+		@include left(-0.5);
 		}
 }
 
@@ -241,7 +263,7 @@ img {
 
 
 // --------------------------------------
-// WYSIWYG
+// CKeditor
 // --------------------------------------
 .content {
 	h1,

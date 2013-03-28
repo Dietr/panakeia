@@ -8,7 +8,15 @@
   }
   &:hover, &:focus {
     a h2 {
-      color: $primarycolor;
+      .warm & {
+        color: $warmcolor;
+      }
+      .cold & {
+        color: $coldcolor;
+      }
+      .neutral & {
+        color: $neutralcolor;
+      }
     }
   }
 }
@@ -21,7 +29,15 @@
   }
   &:hover, &:focus {
     a h2 {
-      color: $primarycolor;
+      .warm & {
+        color: $warmcolor;
+      }
+      .cold & {
+        color: $coldcolor;
+      }
+      .neutral & {
+        color: $neutralcolor;
+      }
     }
   }
 }

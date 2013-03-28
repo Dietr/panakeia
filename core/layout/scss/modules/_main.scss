@@ -1,13 +1,16 @@
-// $Body
-body {
-  background-color: $primarycolor--lightest;
-}
-
 // $Title
 .pageTitle {
   display: block;
   text-align: center;
-  color: $primarycolor;
+  .warm & {
+    color: $warmcolor;
+  }
+  .cold & {
+    color: $coldcolor;
+  }
+  .neutral & {
+    color: $neutralcolor;
+  }
   @include margin-bottom(1);
   @include breakpoint(lap) {
     @include padding-top(2.6);
@@ -17,13 +20,29 @@ body {
 // $Hero
 .hero {
   @include padding(1,1,0,1);
-  background-color: $primarycolor;
+  .warm & {
+    background-color: $warmcolor;
+  }
+  .cold & {
+    background-color: $coldcolor;
+  }
+  .neutral & {
+    background-color: $neutralcolor;
+  }
   color: $whitecolor;
   text-align: center;
   p {
     @include margin-top (1.5);
     @extend .lead;
-    color: scale-saturation(scale-lightness($primarycolor, 60%), -40%);
+    .warm & {
+      color: scale-saturation(scale-lightness($warmcolor, 60%), -40%);
+    }
+    .cold & {
+      color: scale-saturation(scale-lightness($coldcolor, 60%), -40%);
+    }
+    .neutral & {
+      color: scale-saturation(scale-lightness($neutralcolor, 60%), -40%);
+    }
   }
   @include breakpoint(lap) {
     @include padding-top(1.5);
@@ -35,7 +54,15 @@ body {
 
 // $Main
 .mainContent {
-  background-color: $primarycolor--lightest;
+  .warm & {
+    background-color: $warmcolor--lightest;
+  }
+  .cold & {
+    background-color: $coldcolor--lightest;
+  }
+  .neutral & {
+    background-color: $neutralcolor--lightest;
+  }
 }
 
 .article {

@@ -15,7 +15,15 @@
     width: 60px;
     height: 60px;
     margin: 0 auto;
-    border: 1px solid $primarycolor--light;
+    .warm & {
+      border: 1px solid $warmcolor--light;
+    }
+    .cold & {
+      border: 1px solid $coldcolor--light;
+    }
+    .neutral & {
+      border: 1px solid $neutralcolor--light;
+    }
     @include rotate(45deg);
     position: relative;
     top: -2.4em;
@@ -39,8 +47,18 @@
     width: 60px;
     height: 60px;
     margin: 0 auto;
-    border: 1px solid $primarycolor;
-    background-color: $primarycolor;
+    .warm & {
+      border: 1px solid $warmcolor;
+      background-color: $warmcolor;
+    }
+    .cold & {
+      border: 1px solid $coldcolor;
+      background-color: $coldcolor;
+    }
+    .neutral & {
+      border: 1px solid $neutralcolor;
+      background-color: $neutralcolor;
+    }
     @include rotate(45deg);
     position: relative;
     z-index: -5;

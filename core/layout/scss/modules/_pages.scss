@@ -12,6 +12,10 @@
     ul {
       font-style: italic;
       font-weight: 500;
+      margin-bottom: 0;
+    }
+    ul li {
+      margin-bottom: 0;
     }
   }
   a {
@@ -21,6 +25,14 @@
     @extend .textlinkBorder;
   }
   li:before {
-    color: $primarycolor;
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
   }
 }

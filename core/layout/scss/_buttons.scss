@@ -2,18 +2,50 @@
 // Links
 // --------------------------------------
 .textlink, .textlink a {
-  color: $primarycolor;
+  .warm & {
+    color: $warmcolor;
+  }
+  .cold & {
+    color: $coldcolor;
+  }
+  .neutral & {
+    color: $neutralcolor;
+  }
   &:visited {
-    color: $primarycolor;
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
   }
   &:hover, &:focus {
-    color: $primarycolor--dark;
+    .warm & {
+      color: $warmcolor--dark;
+    }
+    .cold & {
+      color: $coldcolor--dark;
+    }
+    .neutral & {
+      color: $neutralcolor--dark;
+    }
   }
 }
 
 .textlinkBorder, .textlinkBorder a {
   &:hover, &:focus {
-    border-bottom: 1px dotted $primarycolor--light;
+    .warm & {
+      border-bottom: 1px dotted $warmcolor--light;
+    }
+    .cold & {
+      border-bottom: 1px dotted $coldcolor--light;
+    }
+    .neutral & {
+      border-bottom: 1px dotted $neutralcolor--light;
+    }
   }
 }
 
@@ -57,10 +89,26 @@
     color: $mediumcolor;
   }
   &:hover, &:focus {
-    color: $primarycolor;
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
   }
   .selected & {
-    color: $primarycolor;
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
     font-weight: 700;
   }
 }
@@ -68,14 +116,30 @@
 .toggleBtn {
   display: block;
   @include adjust-fontsize(16, 18);
-  color: $primarycolor;
+  .warm & {
+    color: $warmcolor;
+  }
+  .cold & {
+    color: $coldcolor;
+  }
+  .neutral & {
+    color: $neutralcolor;
+  }
   font-weight: 700;
   @include padding-tb(0.7,0.55);
   &:visited {
     color: $mediumcolor;
   }
   &:hover, &:focus {
-    color: $primarycolor;
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
   }
 }
 
@@ -85,16 +149,42 @@
   border-radius: $base/2;
   background-color: scale-lightness($primarycolor, -5%);
   display: inline;
-  color: $primarycolor--light;
+  .warm & {
+      color: $warmcolor--light;
+    }
+  .cold & {
+    color: $coldcolor--light;
+  }
+  .neutral & {
+    color: $neutralcolor--light;
+  }
   @include transition(background-color 0.3s ease-in-out);
   &:hover, &:focus {
     color: $whitecolor;
-    background-color: scale-lightness($primarycolor, -5%);
+    .warm & {
+      background-color: scale-lightness($warmcolor, -5%);
+    }
+    .cold & {
+      background-color: scale-lightness($coldcolor, -5%);
+    }
+    .neutral & {
+      background-color: scale-lightness($neutralcolor, -5%);
+    }
   }
   .isActive & {
     font-weight: 700;
-    color: $primarycolor--lightest;
-    background-color: scale-lightness($primarycolor, -8%);
+    .warm & {
+      color: $warmcolor--lightest;
+      background-color: scale-lightness($warmcolor, -8%);
+    }
+    .cold & {
+      color: $coldcolor--lightest;
+      background-color: scale-lightness($coldcolor, -8%);
+    }
+    .neutral & {
+      color: $neutralcolor--lightest;
+      background-color: scale-lightness($neutralcolor, -8%);
+    }
   }
 }
 
@@ -102,11 +192,29 @@
   @include adjust-fontsize(16, 21);
   @include padding(0.5, 0.5, 0.5, 0.5);
   color: $whitecolor;
-  background-color: $primarycolor;
+  .warm & {
+    background-color: $warmcolor;
+  }
+  .cold & {
+    background-color: $coldcolor;
+  }
+  .neutral & {
+    background-color: $neutralcolor;
+  }
   @include transition(background-color 0.3s ease-in-out);
   &:hover, &:focus {
-    color: $primarycolor--lightest;
-    background-color: scale-saturation(darken($primarycolor, 5%), -10%);
+    .warm & {
+      color: $warmcolor--lightest;
+      background-color: scale-saturation(darken($warmcolor, 5%), -10%);
+    }
+    .cold & {
+      color: $coldcolor--lightest;
+      background-color: scale-saturation(darken($coldcolor, 5%), -10%);
+    }
+    .neutral & {
+      color: $neutralcolor--lightest;
+      background-color: scale-saturation(darken($neutralcolor, 5%), -10%);
+    }
   }
 }
 
@@ -114,11 +222,29 @@
   @include adjust-fontsize(16, 18);
   @include padding(0.5, 0.5, 0.5, 0.5);
   color: $whitecolor;
-  background-color: $primarycolor;
+  .warm & {
+    background-color: $warmcolor;
+  }
+  .cold & {
+    background-color: $coldcolor;
+  }
+  .neutral & {
+    background-color: $neutralcolor;
+  }
   @include transition(background-color 0.3s ease-in-out);
   &:hover, &:focus {
-    color: $primarycolor--lightest;
-    background-color: scale-saturation(darken($primarycolor, 5%), -10%);
+    .warm & {
+      color: $warmcolor--lightest;
+      background-color: scale-saturation(darken($warmcolor, 5%), -10%);
+    }
+    .cold & {
+      color: $coldcolor--lightest;
+      background-color: scale-saturation(darken($coldcolor, 5%), -10%);
+    }
+    .neutral & {
+      color: $neutralcolor--lightest;
+      background-color: scale-saturation(darken($neutralcolor, 5%), -10%);
+    }
   }
 }
 
@@ -126,7 +252,15 @@
   cursor: default;
   @include adjust-fontsize(16, 18);
   @include padding(0.5, 0.5, 0.5, 0.5);
-  color: $primarycolor;
+  .warm & {
+    color: $warmcolor;
+  }
+  .cold & {
+    color: $coldcolor;
+  }
+  .neutral & {
+    color: $neutralcolor;
+  }
   background-color: $whitecolor;
   @include transition(background-color 0.3s ease-in-out);
 }
@@ -138,7 +272,15 @@
   background-color: $whitecolor;
   @include transition(box-shadow 0.3s ease-in-out);
   &:hover, &:focus {
-    color: $primarycolor;
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
     @include box-shadow(0px 0px 18px scale-lightness($mediumcolor, 70%));
   }
 }
@@ -149,7 +291,15 @@
   @include padding(0.5, 0.5, 0.5, 0.5);
   color: $mediumcolor;
   border: none;
-  background-color: $primarycolor--lightest;
+  .warm & {
+    background-color: $warmcolor--lightest;
+  }
+  .cold & {
+    background-color: $coldcolor--lightest;
+  }
+  .neutral & {
+    background-color: $neutralcolor--lightest;
+  }
   &:hover, &:focus {
     color: darken($mediumcolor, 20%);
   }
@@ -158,12 +308,28 @@
 .btnSubmit {
   font-size: 18px;
   @include padding(0.5, 0.5, 0.5, 0.5);
-  color: $primarycolor;
+  .warm & {
+    color: $warmcolor;
+  }
+  .cold & {
+    color: $coldcolor;
+  }
+  .neutral & {
+    color: $neutralcolor;
+  }
   border: none;
   border-radius: 0;
   background-color: $whitecolor;
   &:hover, &:focus {
-    color: $primarycolor--dark;
+    .warm & {
+      color: $warmcolor--dark;
+    }
+    .cold & {
+      color: $coldcolor--dark;
+    }
+    .neutral & {
+      color: $neutralcolor--dark;
+    }
   }
 }
 
@@ -173,10 +339,28 @@
   color: $whitecolor;
   border: none;
   border-radius: 0;
-  background-color: $primarycolor;
+  .warm & {
+    background-color: $warmcolor;
+  }
+  .cold & {
+    background-color: $coldcolor;
+  }
+  .neutral & {
+    background-color: $neutralcolor;
+  }
   &:hover, &:focus {
-    color: $primarycolor--lightest;
-    background-color: $primarycolor--dark;
+    .warm & {
+      color: $warmcolor--lightest;
+      background-color: $warmcolor--dark;
+    }
+    .cold & {
+      color: $coldcolor--lightest;
+      background-color: $coldcolor--dark;
+    }
+    .neutral & {
+      color: $neutralcolor--lightest;
+      background-color: $neutralcolor--dark;
+    }
   }
 }
 

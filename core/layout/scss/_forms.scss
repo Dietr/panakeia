@@ -90,12 +90,28 @@ a.button {
 .errorArea, .message {
   text-indent: 1px;
   font-family: $sans;
-  color: $primarycolor--light;
+  .warm & {
+    color: $warmcolor--light;
+  }
+  .cold & {
+    color: $coldcolor--light;
+  }
+  .neutral & {
+    color: $neutralcolor--light;
+  }
   label {
     font-weight: bold;
   }
   & input {
-    border: 3px solid $primarycolor--dark;
+    .warm & {
+      border: 3px solid $warmcolor--dark;
+    }
+    .cold & {
+      border: 3px solid $coldcolor--dark;
+    }
+    .neutral & {
+      border: 3px solid $neutralcolor--dark;
+    }
   }
   span {
     font-style: italic;
@@ -110,8 +126,16 @@ a.button {
 .contactForm {
   @include padding(1,1,1,1);
   abbr {
-    color: $primarycolor;
-     border-bottom: none;
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
+    border-bottom: none;
   }
   input,  textarea{
     background-color: $lightestcolor;
@@ -129,15 +153,39 @@ a.button {
     @extend .btnSubmitNeg;
   }
   .errorArea, .message {
-    color: $primarycolor;
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
     p {
-      color: $primarycolor;
+      .warm & {
+        color: $warmcolor;
+      }
+      .cold & {
+        color: $coldcolor;
+      }
+      .neutral & {
+        color: $neutralcolor;
+      }
     }
     label {
       font-weight: bold;
     }
     & input {
-      border: 3px solid $primarycolor;
+      .warm & {
+        border: 3px solid $warmcolor;
+      }
+      .cold & {
+        border: 3px solid $coldcolor;
+      }
+      .neutral & {
+        border: 3px solid $neutralcolor;
+      }
     }
   }
 }

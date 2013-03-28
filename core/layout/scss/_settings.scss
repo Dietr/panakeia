@@ -31,16 +31,37 @@ $radius                        : 3px;
 
 // Optional theme colors
 // ------------------------------
-$red                           : #ff5c51;
+$warm                          : #ff5c51;
 $cold                          : #172533;
-$warm                          : #322e21;
+$neutral                       : #172533;
 
 // Theme colors
 // ------------------------------
-$primarycolor                  : $red;
+$primarycolor                  : $warm;
 $primarycolor--dark            : scale-saturation(darken($primarycolor, 10%), -20%);
 $primarycolor--light           : scale-lightness($primarycolor, 70%);;
 $primarycolor--lightest        : scale-saturation(scale-lightness($primarycolor, 85%), -85%);
+
+// Warm colors
+// ------------------------------
+$warmcolor                     : $warm;
+$warmcolor--dark               : scale-saturation(darken($warmcolor, 10%), -20%);
+$warmcolor--light              : scale-lightness($warmcolor, 70%);;
+$warmcolor--lightest           : scale-saturation(scale-lightness($warmcolor, 85%), -85%);
+
+// Cold colors
+// ------------------------------
+$coldcolor                     : $cold;
+$coldcolor--dark               : scale-saturation(darken($coldcolor, 10%), -20%);
+$coldcolor--light              : scale-lightness($coldcolor, 70%);;
+$coldcolor--lightest           : scale-saturation(scale-lightness($coldcolor, 85%), -85%);
+
+// Neutral colors
+// ------------------------------
+$neutralcolor                     : $neutral;
+$neutralcolor--dark               : scale-saturation(darken($neutralcolor, 10%), -20%);
+$neutralcolor--light              : scale-lightness($neutralcolor, 70%);;
+$neutralcolor--lightest           : scale-saturation(scale-lightness($neutralcolor, 85%), -85%);
 
 // Standard colors
 // ------------------------------

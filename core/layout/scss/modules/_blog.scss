@@ -2,7 +2,15 @@
 .summary {
   @include padding(1);
   @include margin-bottom(1);
-  border: 1px solid $primarycolor--lightest;
+  .warm & {
+    border: 1px solid $warmcolor--lightest;
+  }
+  .cold & {
+    border: 1px solid $coldcolor--lightest;
+  }
+  .neutral & {
+    border: 1px solid $neutralcolor--lightest;
+  }
   background-color: $whitecolor;
   @include transition(box-shadow 0.3s ease-in-out);
   h1 {
@@ -14,7 +22,15 @@
   &:hover, &:focus {
     @include box-shadow(0px 0px 18px scale-lightness($mediumcolor, 60%));
     h1 {
-      color: $primarycolor;
+      .warm & {
+        color: $warmcolor;
+      }
+      .cold & {
+        color: $coldcolor;
+      }
+      .neutral & {
+        color: $neutralcolor;
+      }
     }
   }
 }
@@ -152,13 +168,37 @@
 
 // $CommentsForm
 .commentsForm {
-  background-color: $primarycolor;
+  .warm & {
+     background-color: $warmcolor;
+  }
+  .cold & {
+     background-color: $coldcolor;
+  }
+  .neutral & {
+     background-color: $neutralcolor;
+  }
   h3 {
     color: $whitecolor;
-    border-bottom: 1px solid scale-lightness($primarycolor, 25%);
+    .warm & {
+      border-bottom: 1px solid scale-lightness($warmcolor, 25%);
+    }
+    .cold & {
+      border-bottom: 1px solid scale-lightness($coldcolor, 25%);
+    }
+    .neutral & {
+      border-bottom: 1px solid scale-lightness($neutralcolor, 25%);
+    }
   }
   p {
-    color: $primarycolor--lightest;
+    .warm & {
+      color: $warmcolor--lightest;
+    }
+    .cold & {
+      color: $coldcolor--lightest;
+    }
+    .neutral & {
+      color: $neutralcolor--lightest;
+    }
   }
   abbr {
     color: $whitecolor;
