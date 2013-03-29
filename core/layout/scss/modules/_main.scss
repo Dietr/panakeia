@@ -53,18 +53,6 @@
 }
 
 // $Main
-.mainContent {
-  .warm & {
-    background-color: $warmcolor--lightest;
-  }
-  .cold & {
-    background-color: $coldcolor--lightest;
-  }
-  .neutral & {
-    background-color: $neutralcolor--lightest;
-  }
-}
-
 .article {
   background-color: $whitecolor;
   @include margin-bottom(1);
