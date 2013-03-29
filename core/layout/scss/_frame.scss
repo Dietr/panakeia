@@ -18,6 +18,15 @@
 // $Wrapper
 .wrapper {
   position: relative;
+  .warm & {
+    background-color: $warmcolor--lightest;
+  }
+  .cold & {
+    background-color: $coldcolor--lightest;
+  }
+  .neutral & {
+    background-color: $neutralcolor--lightest;
+  }
 }
 
 .wrapperLong {
