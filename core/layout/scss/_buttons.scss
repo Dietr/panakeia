@@ -147,16 +147,18 @@
   padding: $base/2 $base;
   margin: 2px;
   border-radius: $base/2;
-  background-color: scale-lightness($primarycolor, -5%);
   display: inline;
   .warm & {
       color: $warmcolor--light;
+      background-color: scale-lightness($warmcolor, -5%);
     }
   .cold & {
     color: $coldcolor--light;
+    background-color: scale-lightness($coldcolor, -5%);
   }
   .neutral & {
     color: $neutralcolor--light;
+    background-color: scale-lightness($neutralcolor, -5%);
   }
   @include transition(background-color 0.3s ease-in-out);
   &:hover, &:focus {

@@ -28,19 +28,11 @@ $desk                          : 64em;
 // ------------------------------
 $radius                        : 3px;
 
-
 // Optional theme colors
 // ------------------------------
-$warm                          : #ff5c51;
-$cold                          : #172533;
-$neutral                       : #172533;
-
-// Theme colors
-// ------------------------------
-$primarycolor                  : $warm;
-$primarycolor--dark            : scale-saturation(darken($primarycolor, 10%), -20%);
-$primarycolor--light           : scale-lightness($primarycolor, 70%);;
-$primarycolor--lightest        : scale-saturation(scale-lightness($primarycolor, 85%), -85%);
+$warm                          : #ed645b;
+$cold                          : #69bfb1;
+$neutral                       : #66665c;
 
 // Warm colors
 // ------------------------------
@@ -73,7 +65,7 @@ $lightestcolor                 : scale-lightness($darkcolor, 95%);
 
 // Links
 // ------------------------------
-$linkcolor                     : $primarycolor;
+$linkcolor                     : #4b4b53;
 $linkcolorhover                : darken($linkcolor, 10);
 $linkcolorfocus                : darken($linkcolor, 10);
 $linkcolorvisited              : darken($linkcolor, 5);

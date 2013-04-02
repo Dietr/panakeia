@@ -303,7 +303,7 @@ img {
 		@include font-dimensions(12);
 	}
 	h1, h2, h3, h4, h5, h6 {
-	  color: $primarycolor;
+	  color: $neutralcolor;
 	}
 	h2, h3 {
 	  border-bottom: 1px solid $lightcolor;
@@ -335,6 +335,6 @@ img {
   }
 	a {
 		text-decoration: underline;
-		color: $primarycolor;
+		color: $neutralcolor;
 	}
 }

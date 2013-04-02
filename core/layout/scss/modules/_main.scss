@@ -35,13 +35,13 @@
     @include margin-top (1.5);
     @extend .lead;
     .warm & {
-      color: scale-saturation(scale-lightness($warmcolor, 60%), -40%);
+      color: scale-saturation(scale-lightness($warmcolor, 75%), -40%);
     }
     .cold & {
-      color: scale-saturation(scale-lightness($coldcolor, 60%), -40%);
+      color: scale-saturation(scale-lightness($coldcolor, 75%), -40%);
     }
     .neutral & {
-      color: scale-saturation(scale-lightness($neutralcolor, 60%), -40%);
+      color: scale-saturation(scale-lightness($neutralcolor, 75%), -40%);
     }
   }
   @include breakpoint(lap) {
