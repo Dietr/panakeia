@@ -30,9 +30,6 @@
     @extend .btn;
     @extend .btnSearch;
   }
-  input[type="autocomplete"] {
-    background-color: black;
-  }
 }
 
 .searchAgain {
