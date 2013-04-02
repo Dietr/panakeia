@@ -32,9 +32,6 @@
 	<!-- Info -->
 	<section class="full doormatInfo">
 		<p class="small left">
-<!-- 			{* RSS Feed *}
-			<a href="{$widgetBlogRecentArticlesFullRssLink}" title="RSS Feed" class="textlink textlinkBorder">{$lblSubscribeToTheRSSFeed|ucfirst}</a> -->
-
 			{* Footer links *}
 			{iteration:footerLinks}
 				<a href="{$footerLinks.url}" title="{$footerLinks.title}" {option:footerLinks.rel} rel="{$footerLinks.rel}"{/option:footerLinks.rel} class="textlink textlinkBorder">{$footerLinks.navigation_title}</a>
