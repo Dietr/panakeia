@@ -5,12 +5,12 @@
 	<div class="wrapper">
 		<div class="container frame mainContent">
 
-			<div class="pageTitle">
+			<header class="pageTitle">
 				{* Logo *}
 				<h1>
 					<a href="/" title="{$pageTitle}"><span class="monogramNeg">{$siteTitle|substring:0:1}</span></a>
 				</h1>
-			</div>
+			</header>
 
 			{* Content *}
 			{iteration:positionMain}
