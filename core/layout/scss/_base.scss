@@ -20,8 +20,8 @@ html {
 body {
 	font: $basefontweight $basefontsize/16*100%/#{$baselineheight} $basefont ;
 	-webkit-font-smoothing: antialiased;
-	             font-smoothing: antialiased;
-	text-rendering : optimizelegibility;
+	        font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
 	color: $darkcolor;
 }
 
@@ -211,21 +211,17 @@ th {
 a {
 	text-decoration: none;
 	color: inherit;
-
 	&:visited {
 		color: inherit;
 	}
-
 	&:hover {
 		text-decoration: none;
 		color: inherit;
 	}
-
 	&:focus {
 		outline: thin dotted;
 		color: inherit;
 	}
-
 	&:hover,
 	&:active {
 		outline: 0;
