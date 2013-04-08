@@ -23,8 +23,16 @@
 		<template label="Default (warm)" path="core/layout/templates/default_warm.tpl">
 			<positions>
 				<position name="main" />
-				<position name="search" />
-				<position name="leftfooter" />
+				<position name="search">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="leftfooter">
+					<defaults>
+						<widget module="blog" action="recent_comments" />
+					</defaults>
+				</position>
 				<position name="rightfooter" />
 				<position name="social" />
 			</positions>
@@ -36,9 +44,21 @@
 		<template label="Home (warm)" path="core/layout/templates/home_warm.tpl">
 			<positions>
 				<position name="top" />
-				<position name="main" />
-				<position name="search" />
-				<position name="leftfooter" />
+				<position name="main">
+					<defaults>
+						<widget module="blog" action="recent_articles_full" />
+					</defaults>
+				</position>
+				<position name="search">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="leftfooter">
+					<defaults>
+						<widget module="blog" action="recent_comments" />
+					</defaults>
+				</position>
 				<position name="rightfooter" />
 				<position name="social" />
 			</positions>
@@ -50,8 +70,16 @@
 		<template label="Default (cold)" path="core/layout/templates/default_cold.tpl">
 			<positions>
 				<position name="main" />
-				<position name="search" />
-				<position name="leftfooter" />
+				<position name="search">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="leftfooter">
+					<defaults>
+						<widget module="blog" action="recent_comments" />
+					</defaults>
+				</position>
 				<position name="rightfooter" />
 				<position name="social" />
 			</positions>
@@ -63,9 +91,21 @@
 		<template label="Home (cold)" path="core/layout/templates/home_cold.tpl">
 			<positions>
 				<position name="top" />
-				<position name="main" />
-				<position name="search" />
-				<position name="leftfooter" />
+				<position name="main">
+					<defaults>
+						<widget module="blog" action="recent_articles_full" />
+					</defaults>
+				</position>
+				<position name="search">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="leftfooter">
+					<defaults>
+						<widget module="blog" action="recent_comments" />
+					</defaults>
+				</position>
 				<position name="rightfooter" />
 				<position name="social" />
 			</positions>
@@ -74,13 +114,19 @@
 			</format>
 		</template>
 
-		</template>
-
 		<template label="Default (neutral)" path="core/layout/templates/default_neutral.tpl">
 			<positions>
 				<position name="main" />
-				<position name="search" />
-				<position name="leftfooter" />
+				<position name="search">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="leftfooter">
+					<defaults>
+						<widget module="blog" action="recent_comments" />
+					</defaults>
+				</position>
 				<position name="rightfooter" />
 				<position name="social" />
 			</positions>
@@ -92,9 +138,21 @@
 		<template label="Home (neutral)" path="core/layout/templates/home_neutral.tpl">
 			<positions>
 				<position name="top" />
-				<position name="main" />
-				<position name="search" />
-				<position name="leftfooter" />
+				<position name="main">
+					<defaults>
+						<widget module="blog" action="recent_articles_full" />
+					</defaults>
+				</position>
+				<position name="search">
+					<defaults>
+						<widget module="search" action="form" />
+					</defaults>
+				</position>
+				<position name="leftfooter">
+					<defaults>
+						<widget module="blog" action="recent_comments" />
+					</defaults>
+				</position>
 				<position name="rightfooter" />
 				<position name="social" />
 			</positions>
