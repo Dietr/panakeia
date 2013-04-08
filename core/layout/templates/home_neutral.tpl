@@ -18,7 +18,7 @@
 
 	<div class="wrapper wrapperLong">
 
-		<div class="container frame mainContent">
+		<div class="container frame">
 			{* Content *}
 			{iteration:positionMain}
 				{option:positionMain.blockIsHTML}

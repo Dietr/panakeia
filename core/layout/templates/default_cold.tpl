@@ -3,7 +3,7 @@
 	{include:core/layout/templates/header.tpl}
 
 	<div class="wrapper">
-		<div class="container frame mainContent">
+		<div class="container frame">
 
 			<header class="pageTitle">
 				{* Logo *}
