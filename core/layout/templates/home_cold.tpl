@@ -10,7 +10,7 @@
 
 		{* Content block *}
 		{iteration:positionTop}
-		<div class="mainContent heroBlurb">
+		<div class="heroBlurb">
 				<div class="centered">{$positionTop.blockContent}</div>
 		</div>
 		{/iteration:positionTop}
