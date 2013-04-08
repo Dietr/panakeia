@@ -10,7 +10,7 @@ $(document).ready(function() {
 		var url = $(this).attr('src');
 
 		var prefix = '?';
-		if(url.indexOf('?') != -1) prefix = '&';
+		if(url.indexOf('?') !== -1){} prefix = '&';
 
 		$(this).attr('src',url + prefix + 'wmode=transparent');
 	});
@@ -26,4 +26,25 @@ $(document).ready(function() {
 		$menu.toggleClass('isExpanded');
 		return false;
 	});
+
+	// ShareButtons
+	// -----------------
+	$('.shareButtons').show();
+	$('.shareButtons').css('visibility','hidden');
+	function ShowShare() {
+		$.ajaxSetup({ cache: true });
+		$.getScript('https://apis.google.com/js/plusone.js');
+		$.getScript('http://platform.twitter.com/widgets.js');
+		$('.shareButtons').css('visibility','visible');
+		$(this).unbind();
+	}
+	$(window).scroll(ShowShare);
+	$('.share a')
+		.removeAttr('href')
+		.css('cursor','pointer')
+		.hover(ShowShare)
+	;
+
 });
+
+

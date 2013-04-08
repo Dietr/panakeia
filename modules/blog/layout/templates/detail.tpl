@@ -8,6 +8,15 @@
 
 
 <div id="blogDetail">
+	<!-- Facebook button -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<!-- Article -->
 	{option:item}
 	<article class="full blogDetail">
@@ -30,6 +39,11 @@
 
 		<div class="centered">
 			{$item.text}
+			<ul class="shareButtons">
+					<li><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a></li>
+					<li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+					<li><div class="g-plusone" data-size="medium" annotations="none"></div></li>
+			</ul>
 			<h4 class="textlink">
 				{option:!comments}
 					<a href="#{$actComment}">

@@ -366,3 +366,24 @@
   }
 }
 
+.shareButtons {
+  li {
+    list-style: none;
+    @include inline-block;
+    @include margin-right(0.3);
+    &:before {
+      content: "";
+    }
+  }
+  .facebook {
+    @include margin-right(0.5);
+    position: relative;
+    top: -4px;
+  }
+  .fb-like {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+}
