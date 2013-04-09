@@ -16,7 +16,7 @@
 			{iteration:positionMain}
 				{option:positionMain.blockIsHTML}
 				<article class="full article">
-					<div class="centered articleContent">
+					<div class="centered articleContent plain">
 						{$positionMain.blockContent}
 					</div>
 				</article>

@@ -22,8 +22,8 @@
 			{* Content *}
 			{iteration:positionMain}
 				{option:positionMain.blockIsHTML}
-				<article class="centered article">
-					<div class="articleContent">
+				<article class="full article">
+					<div class="centered articleContent plain">
 						{$positionMain.blockContent}
 					</div>
 				</article>
