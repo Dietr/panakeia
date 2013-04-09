@@ -39,9 +39,6 @@
   @include breakpoint(lap) {
     @include top(22);
   }
-  @include bp(74em) {
-    @include top(20);
-  }
 }
 
 // $Grid
