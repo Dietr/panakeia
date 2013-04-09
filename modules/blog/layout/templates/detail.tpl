@@ -61,12 +61,12 @@
 	{/option:item}
 
 	<div class="centered pageNavigation">
-		{option:navigation.next}
-		<a href="{$navigation.next.url}" rel="next">{$lblNext|ucfirst}: <span>{$navigation.next.title}</span></a>
-		{/option:navigation.next}
-		{option:!navigation.next}
-			<a href="/blog" rel="next"><span>{$lblRecentArticles|ucfirst}</span></a>
-		{/option:!navigation.next}
+		{option:navigation.previous}
+		<a href="{$navigation.previous.url}" rel="next">{$lblNext|ucfirst}: <span>{$navigation.previous.title}</span></a>
+		{/option:navigation.previous}
+		{option:!navigation.previous}
+		<a href="/blog" rel="next"><span>{$lblRecentArticles|ucfirst}</span></a>
+		{/option:!navigation.previous}
 	</div>
 
 	<!-- Comments -->
