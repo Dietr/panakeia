@@ -56,14 +56,32 @@
 
 .category, .category a {
   font-family: $sans;
-  color: $mediumcolor;
-  @include margin-bottom(1);
   &:visited {
-    color: $mediumcolor;
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
   }
   &:hover, &:focus {
-    color: $darkcolor;
-    border-bottom: 1px dotted $mediumcolor;
+    &:hover, &:focus {
+    .warm & {
+      color: $warmcolor--dark;
+      border-bottom: 1px dotted $warmcolor--light;
+    }
+    .cold & {
+      color: $coldcolor--dark;
+      border-bottom: 1px dotted $coldcolor--light;
+    }
+    .neutral & {
+      color: $neutralcolor--dark;
+      border-bottom: 1px dotted $neutralcolor--light;
+    }
+  }
   }
 }
 

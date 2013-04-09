@@ -38,7 +38,7 @@
 		{/option:item.image}
 
 		<div class="centered">
-			{$item.text}
+			<span class="plain">{$item.text}</span>
 			<ul class="shareButtons">
 					<li><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a></li>
 					<li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
