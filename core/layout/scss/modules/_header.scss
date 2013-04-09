@@ -37,6 +37,17 @@
       content:"";
     }
   }
+  li.selected a {
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+    }
+    .neutral & {
+      color: $neutralcolor;
+    }
+  }
   a {
     @extend .btn;
     @extend .navBtn;

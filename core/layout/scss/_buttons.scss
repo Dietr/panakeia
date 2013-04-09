@@ -99,32 +99,16 @@
       color: $neutralcolor;
     }
   }
-  .selected & {
-    .warm & {
-      color: $warmcolor;
-    }
-    .cold & {
-      color: $coldcolor;
-    }
-    .neutral & {
-      color: $neutralcolor;
-    }
+  .selected &  {
     font-weight: 700;
   }
 }
 
+
 .toggleBtn {
   display: block;
   @include adjust-fontsize(16, 18);
-  .warm & {
-    color: $warmcolor;
-  }
-  .cold & {
-    color: $coldcolor;
-  }
-  .neutral & {
-    color: $neutralcolor;
-  }
+  color: $mediumcolor;
   font-weight: 700;
   @include padding-tb(0.7,0.55);
   &:visited {
