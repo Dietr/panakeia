@@ -62,3 +62,10 @@
   @include padding-lr(1);
   @include padding-top(2);
 }
+
+.plain {
+  a {
+    @extend .textlink;
+    @extend .textlinkBorder;
+  }
+}
