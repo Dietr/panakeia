@@ -16,3 +16,9 @@
 				</ul>
 	</section>
 {/option:widgetBlogRecentComments}
+
+{option:!widgetBlogRecentComments}
+	<section id="blogRecentCommentsWidget">
+				<h3>{$msgBlogNoComments|ucfirst}</h3>
+	</section>
+{/option:!widgetBlogRecentComments}
