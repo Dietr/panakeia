@@ -6,14 +6,10 @@
 {cache:{$LANGUAGE}_blogWidgetArchiveCache}
 	{option:widgetBlogArchive}
 		<section id="blogArchiveWidget" class="mod">
-			<div class="inner">
-				<header class="hd">
-					<h3>{$lblArchive|ucfirst}</h3>
-				</header>
-				<div class="bd content">
-					<ul>
-						{iteration:widgetBlogArchive}
-							<li>
+				<h3>{$lblArchive|ucfirst}</h3>
+				<ul>
+					{iteration:widgetBlogArchive}
+						<li>
 								{option:widgetBlogArchive.url}<a href="{$widgetBlogArchive.url}">{/option:widgetBlogArchive.url}
 									{$widgetBlogArchive.label}
 									{option:widgetBlogArchive.url}({$widgetBlogArchive.total}){/option:widgetBlogArchive.url}
@@ -34,8 +30,6 @@
 							</li>
 						{/iteration:widgetBlogArchive}
 					</ul>
-				</div>
-			</div>
 		</section>
 	{/option:widgetBlogArchive}
 {/cache:{$LANGUAGE}_blogWidgetArchiveCache}
