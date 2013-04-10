@@ -62,7 +62,7 @@
 
 	<div class="centered pageNavigation">
 		{option:navigation.previous}
-		<a href="{$navigation.previous.url}" rel="next">{$lblNext|ucfirst}: <span>{$navigation.previous.title}</span></a>
+		<a href="{$navigation.previous.url}" rel="previous">{$lblPrevious|ucfirst}: <span>{$navigation.previous.title}</span></a>
 		{/option:navigation.previous}
 		{option:!navigation.previous}
 		<a href="/blog" rel="next"><span>{$lblRecentArticles|ucfirst}</span></a>
