@@ -36,6 +36,7 @@
 			{iteration:footerLinks}
 				<a href="{$footerLinks.url}" title="{$footerLinks.title}" {option:footerLinks.rel} rel="{$footerLinks.rel}"{/option:footerLinks.rel} class="textlink textlinkBorder">{$footerLinks.navigation_title}</a>
 			{/iteration:footerLinks}
+			<a id="RSSfeed" href="{$var|geturlforblock:'blog':'rss'}" class="textlink textlinkBorder">{$lblSubscribeToTheRSSFeed|ucfirst}</a>
 		</p>
 		<p class="small right">Copyright © {$now|date:'Y'} {$siteTitle}.
 			<a href="http://www.fork-cms.com" class="textlink textlinkBorder">Fork CMS</a>
