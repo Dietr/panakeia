@@ -40,7 +40,7 @@
 		</p>
 		<p class="small right">Copyright © {$now|date:'Y'} {$siteTitle}.
 			<a href="http://www.fork-cms.com" class="textlink textlinkBorder">Fork CMS</a>
-			<a href="http://www.fork-cms.com" class="textlink textlinkBorder">Panakeia theme</a>
+			<a href="http://www.fork-cms.com/extensions/detail/panakeia" class="textlink textlinkBorder">Panakeia theme</a>
 		</p>
 	</section>
 	</div>
