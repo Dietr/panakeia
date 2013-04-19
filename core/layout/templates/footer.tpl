@@ -52,5 +52,5 @@
 	{/iteration:jsFiles}
 
 	{* Theme specific Javascript *}
-	<script src="{$THEME_URL}/core/layout/js/jquery-1.8.3.min.js"></script>
-	<script src="{$THEME_URL}/core/layout/js/scripts-ck.js"></script>
+	<script src="{$THEME_URL}/core/js/respond.min.js"></script>
+	<script src="{$THEME_URL}/core/js/scripts.min.js"></script>

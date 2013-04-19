@@ -2,11 +2,26 @@
 // Chromeframe
 // --------------------------------------
 .chromeframe {
+  display: block;
   text-align: center;
   position: relative;
   width: 100%;
   padding: 24px;
-  display: block;
+  margin-bottom: 0;
+  a {
+    .warm & {
+      color: $warmcolor;
+    }
+    .cold & {
+      color: $coldcolor;
+     }
+    .neutral & {
+      color: $neutralcolor;
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 // --------------------------------------

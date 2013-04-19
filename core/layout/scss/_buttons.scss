@@ -55,6 +55,15 @@
 }
 
 .category, .category a {
+  .warm & {
+    color: $warmcolor;
+  }
+  .cold & {
+    color: $coldcolor;
+   }
+  .neutral & {
+    color: $neutralcolor;
+  }
   font-family: $sans;
   &:visited {
     .warm & {
@@ -387,5 +396,4 @@
     padding-bottom: 0;
     margin: 0;
   }
-
 }
