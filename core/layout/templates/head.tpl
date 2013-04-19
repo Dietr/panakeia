@@ -26,9 +26,6 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	{* Respond.js *}
-	<script src="{$THEME_URL}/core/layout/js/respond.min.js"></script>
-
 	<!-- Favicon -->
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{$THEME_URL}/apple-touch-icon-57x57-precomposed.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{$THEME_URL}/apple-touch-icon-72x72-precomposed.png" />
