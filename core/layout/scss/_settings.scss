@@ -20,9 +20,9 @@ $baseheadingfontweight         : 700;
 
 // Breakpoints calculated in em's
 // ------------------------------
-$palm                          : 30em;
-$lap                           : 48.75em;
-$desk                          : 64em;
+$palm                          : #{480 / $basefontsize}em;
+$lap                           : #{680 / $basefontsize}em;
+$desk                          : #{960 / $basefontsize}em;
 
 // Roundness
 // ------------------------------
