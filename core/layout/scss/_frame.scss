@@ -13,6 +13,15 @@
   @include breakpoint(lap) {
     @include padding(1,1,1,1);
   }
+  .warm & {
+    background-color: $warmcolor--lightest;
+  }
+  .cold & {
+    background-color: $coldcolor--lightest;
+  }
+  .neutral & {
+    background-color: $neutralcolor--lightest;
+  }
 }
 
 .heroBlurb {
