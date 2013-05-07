@@ -45,10 +45,13 @@ $(document).ready(function() {
 		.hover(ShowShare)
 	;
 
-	$(".autoEllipsis").dotdotdot({
-		ellipsis	: ' ... ',
-		watch			: true
-	});
+	$(window).load(function() {
+		$(".autoEllipsis").dotdotdot({
+			ellipsis	: ' ... ',
+			wrap			: 'word',
+			watch			: true
+		});
+	}).resize();
 
 });
 
