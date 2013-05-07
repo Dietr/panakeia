@@ -15,7 +15,7 @@
 		{iteration:items}
 		<article class="block summary">
 			<a href="{$items.full_url}" title="{$items.title}" class="summaryContent">
-				<header class="summaryContentText">
+				<header class="summaryContentText autoEllipsis">
 					<h1 class="h2">{$items.title|ucfirst}</h1>
 					<p class="date">
 						<time datetime="{$items.publish_on|date:'c':{$LANGUAGE}}">
@@ -24,7 +24,7 @@
 							<span class="year">{$items.publish_on|date:'Y':{$LANGUAGE}}</span>
 						</time>
 					</p>
-					{$items.introduction|substring:0:216|ucfirst} ...
+					{$items.introduction|ucfirst}
 				</header>
 			</a>
 

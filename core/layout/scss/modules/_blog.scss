@@ -40,13 +40,17 @@
 }
 
 .summaryContentText {
+  overflow: hidden;
+}
+
+.autoEllipsis {
+  max-height: auto;
   @include breakpoint(lap) {
-    height: 22em;
-    overflow: hidden;
+    height: 13em;
+    margin-bottom: 1em;
   }
   @include breakpoint(desk) {
-    height: 28em;
-    overflow: hidden;
+    height: 17em;
   }
 }
 

@@ -45,6 +45,11 @@ $(document).ready(function() {
 		.hover(ShowShare)
 	;
 
+	$(".autoEllipsis").dotdotdot({
+		ellipsis	: ' ... ',
+		watch			: true
+	});
+
 });
 
 
