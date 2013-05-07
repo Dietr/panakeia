@@ -53,5 +53,5 @@
 
 	{* Theme specific Javascript *}
 	<!-- Make responsive website responsive in IE<9 -->
-	<!--[if lt IE 9  & (!IEMobile)]><script src="{$THEME_URL}/core/js/scripts.min.js"></script><![endif]-->
+	<!--[if lt IE 9  & (!IEMobile)]><script src="{$THEME_URL}/core/js/respond.min.js"></script><![endif]-->
 	<script src="{$THEME_URL}/core/js/scripts.min.js"></script>
