@@ -12,7 +12,7 @@
     color: $neutralcolor;
   }
   @include margin-bottom(1);
-  @include breakpoint(lap) {
+  @include breakpoint(deskplus) {
     @include padding-top(3.1);
   }
 }
@@ -44,7 +44,7 @@
       color: scale-saturation(scale-lightness($neutralcolor, 75%), -40%);
     }
   }
-  @include breakpoint(lap) {
+  @include breakpoint(deskplus) {
     @include padding-top(1.5);
     @include top(2.6);
     position: fixed;

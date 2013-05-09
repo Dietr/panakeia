@@ -45,6 +45,8 @@ $(document).ready(function() {
 		.hover(ShowShare)
 	;
 
+	// DotDotDot
+	// -----------------
 	$(window).load(function() {
 		$(".autoEllipsis").dotdotdot({
 			ellipsis	: ' ... ',
@@ -54,5 +56,3 @@ $(document).ready(function() {
 	}).resize();
 
 });
-
-

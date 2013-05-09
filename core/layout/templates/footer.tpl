@@ -56,3 +56,4 @@
 	<!--[if lt IE 9  & (!IEMobile)]><script src="{$THEME_URL}/core/js/respond.min.js"></script><![endif]-->
 	<script src="{$THEME_URL}/core/js/dotdotdot.min.js"></script>
 	<script src="{$THEME_URL}/core/js/scripts.min.js"></script>
+

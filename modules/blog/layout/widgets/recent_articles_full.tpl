@@ -5,7 +5,6 @@
 
 {option:widgetBlogRecentArticlesFull}
 	<section id="blogRecentArticlesFullWidget">
-
 		{iteration:widgetBlogRecentArticlesFull}
 		<article class="block summary">
 			<a href="{$widgetBlogRecentArticlesFull.full_url}" title="{$widgetBlogRecentArticlesFull.title}" class="summaryContent">
@@ -20,7 +19,6 @@
 					</p>
 					{$widgetBlogRecentArticlesFull.introduction|ucfirst}
 				</header>
-
 			</a>
 
 			<footer class="summaryFooter">

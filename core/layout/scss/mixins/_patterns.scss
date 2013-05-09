@@ -200,6 +200,9 @@
   @else if $point == desk {
     @media screen and (min-width: $desk)  { @content; }
   }
+  @else if $point == deskplus {
+    @media screen and (min-width: $deskplus)  { @content; }
+  }
 }
 
 // ----------------

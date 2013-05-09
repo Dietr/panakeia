@@ -45,7 +45,7 @@
 }
 
 .wrapperLong {
-  @include breakpoint(lap) {
+  @include breakpoint(deskplus) {
     @include top(22);
   }
 }

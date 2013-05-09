@@ -33,7 +33,7 @@
   text-align: center;
   @include background-opacity($whitecolor, 0.9);
   border-bottom: 1px solid lighten($mediumcolor,35%);
-  @include breakpoint(lap) {
+  @include breakpoint(deskplus) {
     position: fixed;
   }
 }
