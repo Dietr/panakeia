@@ -20,17 +20,17 @@
 	<metanavigation supported="false" />
 	<templates>
 
-		<template label="Default (warm)" path="core/layout/templates/default_warm.tpl">
+		<template label="Default (warm)" path="Core/Layout/Templates/DefaultWarm.tpl">
 			<positions>
 				<position name="main" />
 				<position name="search">
 					<defaults>
-						<widget module="search" action="form" />
+						<widget module="Search" action="Form" />
 					</defaults>
 				</position>
 				<position name="leftfooter">
 					<defaults>
-						<widget module="blog" action="recent_comments" />
+						<widget module="Blog" action="RecentComments" />
 					</defaults>
 				</position>
 				<position name="rightfooter" />
@@ -41,22 +41,22 @@
 			</format>
 		</template>
 
-		<template label="Home (warm)" path="core/layout/templates/home_warm.tpl">
+		<template label="Home (warm)" path="Core/Layout/Templates/HomeWarm.tpl">
 			<positions>
 				<position name="top" />
 				<position name="main">
 					<defaults>
-						<widget module="blog" action="recent_articles_full" />
+						<widget module="Blog" action="RecentArticlesFull" />
 					</defaults>
 				</position>
 				<position name="search">
 					<defaults>
-						<widget module="search" action="form" />
+						<widget module="Search" action="Form" />
 					</defaults>
 				</position>
 				<position name="leftfooter">
 					<defaults>
-						<widget module="blog" action="recent_comments" />
+						<widget module="Blog" action="RecentComments" />
 					</defaults>
 				</position>
 				<position name="rightfooter" />
@@ -67,17 +67,17 @@
 			</format>
 		</template>
 
-		<template label="Default (cold)" path="core/layout/templates/default_cold.tpl">
+		<template label="Default (cold)" path="Core/Layout/Templates/DefaultCold.tpl">
 			<positions>
 				<position name="main" />
 				<position name="search">
 					<defaults>
-						<widget module="search" action="form" />
+						<widget module="Search" action="Form" />
 					</defaults>
 				</position>
 				<position name="leftfooter">
 					<defaults>
-						<widget module="blog" action="recent_comments" />
+						<widget module="Blog" action="RecentComments" />
 					</defaults>
 				</position>
 				<position name="rightfooter" />
@@ -88,22 +88,22 @@
 			</format>
 		</template>
 
-		<template label="Home (cold)" path="core/layout/templates/home_cold.tpl">
+		<template label="Home (cold)" path="Core/Layout/Templates/HomeCold.tpl">
 			<positions>
 				<position name="top" />
 				<position name="main">
 					<defaults>
-						<widget module="blog" action="recent_articles_full" />
+						<widget module="Blog" action="RecentArticlesFull" />
 					</defaults>
 				</position>
 				<position name="search">
 					<defaults>
-						<widget module="search" action="form" />
+						<widget module="Search" action="Form" />
 					</defaults>
 				</position>
 				<position name="leftfooter">
 					<defaults>
-						<widget module="blog" action="recent_comments" />
+						<widget module="Blog" action="RecentComments" />
 					</defaults>
 				</position>
 				<position name="rightfooter" />
@@ -114,17 +114,17 @@
 			</format>
 		</template>
 
-		<template label="Default (neutral)" path="core/layout/templates/default_neutral.tpl">
+		<template label="Default (neutral)" path="Core/Layout/Templates/DefaultNeutral.tpl">
 			<positions>
 				<position name="main" />
 				<position name="search">
 					<defaults>
-						<widget module="search" action="form" />
+						<widget module="Search" action="Form" />
 					</defaults>
 				</position>
 				<position name="leftfooter">
 					<defaults>
-						<widget module="blog" action="recent_comments" />
+						<widget module="Blog" action="RecentComments" />
 					</defaults>
 				</position>
 				<position name="rightfooter" />
@@ -135,22 +135,22 @@
 			</format>
 		</template>
 
-		<template label="Home (neutral)" path="core/layout/templates/home_neutral.tpl">
+		<template label="Home (neutral)" path="Core/Layout/Templates/HomeNeutral.tpl">
 			<positions>
 				<position name="top" />
 				<position name="main">
 					<defaults>
-						<widget module="blog" action="recent_articles_full" />
+						<widget module="Blog" action="RecentArticlesFull" />
 					</defaults>
 				</position>
 				<position name="search">
 					<defaults>
-						<widget module="search" action="form" />
+						<widget module="Search" action="Form" />
 					</defaults>
 				</position>
 				<position name="leftfooter">
 					<defaults>
-						<widget module="blog" action="recent_comments" />
+						<widget module="Blog" action="RecentComments" />
 					</defaults>
 				</position>
 				<position name="rightfooter" />
