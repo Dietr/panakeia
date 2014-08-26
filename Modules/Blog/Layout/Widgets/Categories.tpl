@@ -6,7 +6,7 @@
 {option:widgetBlogCategories}
 			<ul class="subNav">
 				<li>
-					<a href="{$var|geturlforblock:'blog'}" rel="next nofollow" title="Next page">{$lblAll|ucfirst}</a>
+					<a href="{$var|geturlforblock:'Blog'}" rel="next nofollow" title="Next page">{$lblAll|ucfirst}</a>
 				</li>
 				{iteration:widgetBlogCategories}
 				<li>

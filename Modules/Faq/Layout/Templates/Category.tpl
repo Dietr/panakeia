@@ -20,6 +20,6 @@
 
 <div class="full more">
 	<ul>
-		<li><a href="{$var|geturlforblock:'faq'}" title="{$lblMore|ucfirst}">{$lblMore|ucfirst}</a></li>
+		<li><a href="{$var|geturlforblock:'Faq'}" title="{$lblMore|ucfirst}">{$lblMore|ucfirst}</a></li>
 	</ul>
 </div>

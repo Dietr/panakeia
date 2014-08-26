@@ -40,7 +40,7 @@
 
 		<div class="full more">
 			<ul>
-				<li><a href="{$var|geturlforblock:'blog'}" rel="next nofollow">{$lblMore|ucfirst}</a></li>
+				<li><a href="{$var|geturlforblock:'Blog'}" rel="next nofollow">{$lblMore|ucfirst}</a></li>
 			</ul>
 		</div>
 
