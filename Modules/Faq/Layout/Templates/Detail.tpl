@@ -58,7 +58,7 @@
 
 	<footer class="full more">
 			<ul>
-				<li><a href="{$var|geturlforblock:'faq'}" title="{$lblToFaqOverview|ucfirst}">{$lblMore|ucfirst}</a></li>
+				<li><a href="{$var|geturlforblock:'Faq'}" title="{$lblToFaqOverview|ucfirst}">{$lblMore|ucfirst}</a></li>
 			</ul>
 	</footer>
 
